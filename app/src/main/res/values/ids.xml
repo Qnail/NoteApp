@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="loginbutton" type="id">loginbutton</item>
+    <item name="input" type="id">input</item>
+    <item name="buton1" type="id">button1</item>
+    <item name="more_text" type="id">more_text</item>
+</resources>

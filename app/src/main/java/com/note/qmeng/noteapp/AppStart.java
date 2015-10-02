@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 
@@ -45,7 +44,7 @@ public class AppStart extends Activity {
      */
     private void redirectTo()
     {
-        Intent intent = new Intent(this,IndexActivity.class);
+        Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.push_in,R.anim.push_out);
         finish();
