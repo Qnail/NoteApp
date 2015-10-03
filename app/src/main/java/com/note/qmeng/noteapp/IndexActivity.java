@@ -16,9 +16,9 @@ public class IndexActivity extends Activity{
         setContentView(R.layout.activity_index);
 
 
-        View mWebView = findViewById(R.id.webView);
-//        mWebView.loadUrl("http://www.baidu.com");
-        mWebView.getBackground().setAlpha(200);
+//        View mWebView = findViewById(R.id.webView);
+////        mWebView.loadUrl("http://www.baidu.com");
+//        mWebView.getBackground().setAlpha(200);
     }
 
 }
