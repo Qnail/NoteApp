@@ -22,7 +22,7 @@ public class LogoActivity  extends Activity{
 
         Intent intent = new Intent(this,IndexActivity.class);
         startActivity(intent);
-        finish();
+//        finish();
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

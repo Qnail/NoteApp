@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background2">
+    <WebView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/login_background2"/>
+        android:layout_height="193dp"
+        android:id="@+id/webView"
+        android:layout_gravity="center"
+        android:background="@color/transparent"/>
 
 </LinearLayout>

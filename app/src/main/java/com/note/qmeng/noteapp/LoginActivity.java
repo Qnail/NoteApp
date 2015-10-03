@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -22,6 +23,8 @@ public class LoginActivity extends Activity{
     private CheckBox remPwd,autoLogin;
     private Button loginButton;
     private SharedPreferences sp;
+
+    private long maxExitTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +49,7 @@ public class LoginActivity extends Activity{
                 autoLogin.setChecked(true);
                 Intent intent = new Intent(this,LogoActivity.class);
                 startActivity(intent);
-                this.finish();
+//                this.finish();//auto login destroy the Activity
             }
         }
 
@@ -67,7 +70,7 @@ public class LoginActivity extends Activity{
                     }
                     Intent intent = new Intent(LoginActivity.this,LogoActivity.class);
                     startActivity(intent);
-                    finish();
+//                    finish();//click loginButton destroy the Activity
                 }else
                 {
                     Toast.makeText(LoginActivity.this,"用户名或密码错误，请重新登录！",Toast.LENGTH_LONG).show();
@@ -125,5 +128,28 @@ public class LoginActivity extends Activity{
             result = true;
         }
         return result;
+    }
+
+    /**
+     * 按键两次退出程序
+     * @param keyCode
+     * @param event
+     * @return
+     */
+    public boolean onKeyDown(int keyCode,KeyEvent event)
+    {
+        if(keyCode == KeyEvent.KEYCODE_BACK)
+        {
+            if((System.currentTimeMillis()-maxExitTime)>2000)
+            {
+                Toast.makeText(this,"再按一次退出程序",Toast.LENGTH_SHORT).show();
+                maxExitTime = System.currentTimeMillis();
+            }else
+            {
+                finish();
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode,event);
     }
 }
