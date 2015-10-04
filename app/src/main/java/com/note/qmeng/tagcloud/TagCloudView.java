@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.note.qmeng.noteapp.NoteTabHost;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -315,9 +317,13 @@ public class TagCloudView extends RelativeLayout {
             @Override
             public void onClick(View v) {
                 //we now have url from main code
-                Uri uri = Uri.parse( urlMaker(url) );
-                //just open a new intent and set the content to search for the url
-                mContext.startActivity(new Intent( Intent.ACTION_VIEW, uri ) );
+//                Uri uri = Uri.parse( urlMaker(url) );
+//                //just open a new intent and set the content to search for the url
+//                mContext.startActivity(new Intent( Intent.ACTION_VIEW, uri ) );
+                Intent intent = new Intent(mContext,NoteTabHost.class);
+                intent.putExtra("URL",url);
+                mContext.startActivity(intent);
+
             }
         };
     }

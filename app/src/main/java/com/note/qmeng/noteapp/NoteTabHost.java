@@ -17,6 +17,9 @@ public class NoteTabHost extends Activity {
         TabHost tabHost = (TabHost) findViewById(R.id.tabhost);
         tabHost.setup();
 
+        Bundle extras = getIntent().getExtras();
+        String mText = extras.getString("URL");
+        System.out.println(mText);
         tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("时间线",getResources().getDrawable(R.drawable.ic_launcher)).setContent(R.id.view1));
         tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("活动",getResources().getDrawable(R.drawable.ic_launcher)).setContent(R.id.view2));
         tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("+",getResources().getDrawable(R.drawable.ic_launcher)).setContent(R.id.view3));
