@@ -12,6 +12,7 @@
         android:layout_height="fill_parent"
         android:background="@drawable/menu"
         android:orientation="vertical">
+
     </LinearLayout>
     <!-- TabHost必须包含一个 TabWidget和一个FrameLayout-->
     <TabHost android:id="@+id/tabhost"
