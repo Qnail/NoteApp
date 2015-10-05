@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
-
+        <!-- start -->
         <activity android:name=".AppStart"
             android:label="NoteApp"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
@@ -16,26 +16,29 @@
                     <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
         </activity>
-
+        <!-- 登录界面 -->
         <activity android:name=".LoginActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
-
+        <!-- logo界面 -->
         <activity android:name=".LogoActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
+        <!-- tag分页的界面 -->
         <activity android:name=".NoteTabHost"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
 
+        <!-- 原型关键字页面-->
         <activity
             android:name=".IndexActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
+        <!-- 原型关键字页面-->
         <activity android:name="com.note.qmeng.tagcloud.SampleTagCloud"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">

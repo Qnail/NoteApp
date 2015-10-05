@@ -22,7 +22,7 @@ public class LogoActivity  extends Activity{
         progressBar = (ProgressBar)findViewById(R.id.pgBar);
         backButton = (Button)findViewById(R.id.backButton);
 
-        Intent intent = new Intent(this,SampleTagCloud.class);
+        Intent intent = new Intent(this,SampleTagCloud.class);//SampleTagCloud////NoteTabHost
         startActivity(intent);
 //        finish();
         backButton.setOnClickListener(new View.OnClickListener() {
