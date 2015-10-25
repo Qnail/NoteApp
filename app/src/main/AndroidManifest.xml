@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
         <!-- start -->
-        <activity android:name=".AppStart"
+        <activity android:name=".StartActivity"
             android:label="NoteApp"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
                 <intent-filter>

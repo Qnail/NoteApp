@@ -121,6 +121,12 @@ public class LoginActivity extends Activity{
 //        }
 //    }
 
+    /**
+     * 检查用户信息是否正确
+     * @param userName
+     * @param password
+     * @return
+     */
     public boolean checkInfo(String userName,String password){
         boolean result = false;
         if(userName.equals("seu")&&password.equals("123"))
