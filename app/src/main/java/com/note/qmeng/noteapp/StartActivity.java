@@ -10,7 +10,7 @@ import android.view.animation.Animation;
 /**
  * Created by MQ on 2015/10/1.
  */
-public class AppStart extends Activity {
+public class StartActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -28,6 +28,10 @@ public class AppStart extends Activity {
 
             }
 
+            /**
+             * 动画结束后跳转
+             * @param animation
+             */
             @Override
             public void onAnimationEnd(Animation animation) {
                 redirectTo();
