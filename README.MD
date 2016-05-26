@@ -10,3 +10,11 @@ add readme description.
 ｜　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　｜
 //---------------------------------End activity line-----------------------------------//
 
+NoteApp---version0.11 2016/05/25
+add readme description.
+//---------------------------------add activity line-----------------------------------//
+|StartActivity(开启app界面)-->LoginActivity(登录界面)--->LogoActivity(登录进度等待界面)--->｜
+|SampleTagCloud(云标签界面)--->NoteTabHost(Tab界面) .                                 ｜
+｜　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　｜
+｜　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　｜
+//---------------------------------End activity line-----------------------------------//

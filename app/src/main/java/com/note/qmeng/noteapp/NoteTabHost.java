@@ -118,11 +118,11 @@ public class NoteTabHost extends Activity implements View.OnTouchListener {
         //String mText = extras.getString("URL");
         //System.out.println(mText);
 
-        tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("时间线", getResources().getDrawable(R.drawable.camel)).setContent(R.id.view1));
-        tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("活动",getResources().getDrawable(R.drawable.elephant)).setContent(R.id.view2));
-        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("+",getResources().getDrawable(R.drawable.home)).setContent(R.id.view3));
-        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("好友",getResources().getDrawable(R.drawable.bear)).setContent(R.id.view4));
-        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("设置",getResources().getDrawable(R.drawable.water_buffalo)).setContent(R.id.view5));
+        tabHost.addTab(tabHost.newTabSpec("timeLine").setIndicator("时间线", getResources().getDrawable(R.drawable.camel)).setContent(R.id.view1));
+        tabHost.addTab(tabHost.newTabSpec("addNewNote").setIndicator("+",getResources().getDrawable(R.drawable.elephant)).setContent(R.id.view2));
+        tabHost.addTab(tabHost.newTabSpec("else").setIndicator("其他",getResources().getDrawable(R.drawable.home)).setContent(R.id.view3));
+//        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("好友",getResources().getDrawable(R.drawable.bear)).setContent(R.id.view4));
+//        tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("设置",getResources().getDrawable(R.drawable.water_buffalo)).setContent(R.id.view5));
 
 
 

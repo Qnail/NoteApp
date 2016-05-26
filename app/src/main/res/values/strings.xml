@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MinderHead</string>
+    <string name="app_name">NOTE</string>
     <string name="login">登录</string>
     <string name = "account">账号</string>
     <string name ="pwd">密码</string>
@@ -10,6 +10,7 @@
     <string name="autoLogin">自动登录</string>
     <string name = "isLogging">正在登录...</string>
     <string name = "action_settings">设置</string>
+
 
 
 </resources>
